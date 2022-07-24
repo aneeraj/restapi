@@ -78,7 +78,7 @@ func handleRequests() {
 
 func main() {
     Questions = []Question{
-		Question{Id: "1", ques: "Little interest or pleasure in doing things", list1: "Not at all","Several Days", list2: "More than half the days","Nearly every day"},
+		Question{Id: "1", ques: "Little interest or pleasure in doing things", list1: ["Not at all","Several Days"], list2: ["More than half the days","Nearly every day"]},
     }
     handleRequests()
 }
