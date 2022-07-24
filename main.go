@@ -78,8 +78,15 @@ func handleRequests() {
 
 func main() {
     Questions = []Question{
-        Question{Id: "1", Ques: "Hello", List1: "Question Description", List2: "Question Content"},
-        Question{Id: "2", Ques: "Hello 2", List1: "Question Description", List2: "Question Content"},
+		Question{Id: "1", Ques: "Little interest or pleasure in doing things", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Feeling down, depressed, or hopeless", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Trouble falling or staying asleep, or sleeping too much", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Feeling tired or having little energy", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Poor appetite or overeating", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Feeling bad about yourself or that you are a failure or have a let yourself or your family down", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Trouble concentrating on things, such as reading the newspaper or watching television", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Moving or speaking so slowly that other people could have noticed or the opposite - being so figety or restless that you have been moving around a lot more than usual", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Thoughts that you would be better off dead, or of hurting yourself", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
     }
     handleRequests()
 }
