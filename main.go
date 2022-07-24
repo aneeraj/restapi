@@ -10,10 +10,12 @@ import (
 )
 
 type Question struct {
-    Id      string    `json:"Id"`
-    Ques   string `json:"ques"`
+    Id    string    `json:"Id"`
+    Ques  string `json:"ques"`
     List1 string `json:"list1"`
     List2 string `json:"list2"`
+	List3 string `json:"list3"`
+	List4 string `json:"list4"`
 }
 
 var Questions []Question
@@ -78,7 +80,7 @@ func handleRequests() {
 
 func main() {
     Questions = []Question{
-		Question{Id: "1", ques: "Little interest or pleasure in doing things", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", Ques: "Little interest or pleasure in doing things", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
     }
     handleRequests()
 }
