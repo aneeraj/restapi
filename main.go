@@ -32,9 +32,9 @@ func returnSingleQuestion(w http.ResponseWriter, r *http.Request) {
     vars := mux.Vars(r)
     key := vars["id"]
 
-    for _, Question := range Questions {
-        if Question.Id == key {
-            json.NewEncoder(w).Encode(Question)
+    for _, question := range Questions {
+        if question.Id == key {
+            json.NewEncoder(w).Encode(question)
         }
     }
 }
@@ -45,21 +45,21 @@ func createNewQuestion(w http.ResponseWriter, r *http.Request) {
     // unmarshal this into a new Question struct
     // append this to our Questions array.    
     reqBody, _ := ioutil.ReadAll(r.Body)
-    var Question Question 
-    json.Unmarshal(reqBody, &Question)
+    var question Question 
+    json.Unmarshal(reqBody, &question)
     // update our global Questions array to include
     // our new Question
-    Questions = append(Questions, Question)
+    Questions = append(Questions, question)
 
-    json.NewEncoder(w).Encode(Question)
+    json.NewEncoder(w).Encode(question)
 }
 
 func deleteQuestion(w http.ResponseWriter, r *http.Request) {
     vars := mux.Vars(r)
     id := vars["id"]
 
-    for index, Question := range Questions {
-        if Question.Id == id {
+    for index, question := range Questions {
+        if question.Id == id {
             Questions = append(Questions[:index], Questions[index+1:]...)
         }
     }
@@ -70,9 +70,9 @@ func handleRequests() {
     myRouter := mux.NewRouter().StrictSlash(true)
     myRouter.HandleFunc("/", homePage)
     myRouter.HandleFunc("/Questions", returnAllQuestions)
-    myRouter.HandleFunc("/Question", createNewQuestion).Methods("POST")
-    myRouter.HandleFunc("/Question/{id}", deleteQuestion).Methods("DELETE")
-    myRouter.HandleFunc("/Question/{id}", returnSingleQuestion)
+    myRouter.HandleFunc("/question", createNewQuestion).Methods("POST")
+    myRouter.HandleFunc("/question/{id}", deleteQuestion).Methods("DELETE")
+    myRouter.HandleFunc("/question/{id}", returnSingleQuestion)
     log.Fatal(http.ListenAndServe(":10000", myRouter))
 }
 
