@@ -69,7 +69,7 @@ func deleteQuestion(w http.ResponseWriter, r *http.Request) {
 func handleRequests() {
     myRouter := mux.NewRouter().StrictSlash(true)
     myRouter.HandleFunc("/", homePage)
-    myRouter.HandleFunc("/Questions", returnAllQuestions)
+    myRouter.HandleFunc("/questions", returnAllQuestions)
     myRouter.HandleFunc("/question", createNewQuestion).Methods("POST")
     myRouter.HandleFunc("/question/{id}", deleteQuestion).Methods("DELETE")
     myRouter.HandleFunc("/question/{id}", returnSingleQuestion)
