@@ -11,7 +11,7 @@ import (
 
 type Questions struct {
     Id      string    `json:"Id"`
-    Ques   string `json:"Question"`
+    Ques   string `json:"Ques"`
     List1 string `json:"list1"`
     List2 string `json:"list2"`
 }
