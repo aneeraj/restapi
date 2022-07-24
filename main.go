@@ -73,7 +73,7 @@ func handleRequests() {
     myRouter.HandleFunc("/question", createNewQuestion).Methods("POST")
     myRouter.HandleFunc("/question/{id}", deleteQuestion).Methods("DELETE")
     myRouter.HandleFunc("/question/{id}", returnSingleQuestion)
-    log.Fatal(http.ListenAndServe(":10000", myRouter))
+    log.Fatal(http.ListenAndServe(":8080", myRouter))
 }
 
 func main() {
