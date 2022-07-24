@@ -78,8 +78,8 @@ func handleRequests() {
 
 func main() {
     Questions = []Question{
-        Question{Id: "1", Ques: "Hello", list1: "Question Description", list2: "Question Content"},
-        Question{Id: "2", Ques: "Hello 2", list1: "Question Description", list2: "Question Content"},
+        Question{Id: "1", Ques: "Hello", List1: "Question Description", List2: "Question Content"},
+        Question{Id: "2", Ques: "Hello 2", List1: "Question Description", List2: "Question Content"},
     }
     handleRequests()
 }
