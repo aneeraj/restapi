@@ -9,7 +9,7 @@ import (
     "github.com/gorilla/mux"
 )
 
-type Questions struct {
+type Question struct {
     Id      string    `json:"Id"`
     Ques   string `json:"Ques"`
     List1 string `json:"list1"`
