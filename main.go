@@ -78,15 +78,15 @@ func handleRequests() {
 
 func main() {
     Questions = []Question{
-		Question{Id: "1", Ques: "Little interest or pleasure in doing things", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Feeling down, depressed, or hopeless", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Trouble falling or staying asleep, or sleeping too much", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Feeling tired or having little energy", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Poor appetite or overeating", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Feeling bad about yourself or that you are a failure or have a let yourself or your family down", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Trouble concentrating on things, such as reading the newspaper or watching television", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Moving or speaking so slowly that other people could have noticed or the opposite - being so figety or restless that you have been moving around a lot more than usual", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"},
-		Question{Id: "1", Ques: "Thoughts that you would be better off dead, or of hurting yourself", List1: "["Not at all","Several Days"]", List2: "["More than half the days","Nearly every day"]"}
+		Question{Id: "1", ques: "Little interest or pleasure in doing things", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Feeling down, depressed, or hopeless", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Trouble falling or staying asleep, or sleeping too much", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Feeling tired or having little energy", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Poor appetite or overeating", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Feeling bad about yourself or that you are a failure or have a let yourself or your family down", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Trouble concentrating on things, such as reading the newspaper or watching television", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Moving or speaking so slowly that other people could have noticed or the opposite - being so figety or restless that you have been moving around a lot more than usual", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"},
+		Question{Id: "1", ques: "Thoughts that you would be better off dead, or of hurting yourself", list1: "["Not at all","Several Days"]", list2: "["More than half the days","Nearly every day"]"}
     }
     handleRequests()
 }
