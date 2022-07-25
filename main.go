@@ -125,11 +125,14 @@ func handleRequests() {
 func main() {
 	Questions1 = []Question1{
 		Question1{Id: "1", Ques: "Little interest or pleasure in doing things", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
-		Question1{Id: "1", Ques: "Blah2", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
-		Question1{Id: "1", Ques: "Blah3", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
-		Question1{Id: "1", Ques: "Blah4", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
-		Question1{Id: "1", Ques: "Blah5", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
-		Question1{Id: "1", Ques: "Blah6", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Feeling down, depressed, or hopeless", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Trouble falling or staying asleep, or sleeping too much", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Feeling tired or having little energy", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Poor appetite or overeating", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Feeling bad about yourself or that you are a failure or have let yourself or your family down", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Trouble concentrating on things, such as reading the newspaper or watching television", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Moving or speaking so slowly that other people could have noticed or the opposite - being so restless that you have been moving around a lot more than usual", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
+		Question1{Id: "1", Ques: "Thoughts that you would be better off dead, or of hurting yourself", List1: "Not at all", List2: "Several Days", List3: "More than half the days", List4: "Nearly every day"},
 	}
 	Questions2 = []Question2{
 		Question2{Id: "2", Ques: "I have visible signs of nervousness such as sweaty palms, shaky hands, and so on right before a test", List1: "Not at all", List2: "Sometimes", List3: "More often", List4: "Always"},
